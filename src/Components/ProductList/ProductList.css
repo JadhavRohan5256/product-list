@@ -1,0 +1,93 @@
+.product-container {
+    width: 70%;
+    margin: 0 auto;
+}
+#product-list {
+    border-collapse: collapse;
+    width:  100%;
+}
+#product-list thead tr {
+    border-bottom: 1px solid #000;
+}
+#product-list thead tr th {
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #808080;
+    background-color: #e2d5d54e;
+    text-align: left;
+    font-weight: 500;
+}
+#product-list tbody tr td {
+    padding: 0.5rem;
+    vertical-align: top;
+}
+
+.product-img {
+    width: 50px;
+}
+.product-name a {
+    color : #2196F3;
+}
+.product-stock {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.success {
+    color: #006400;
+}
+.danger {
+    color: #B00020;
+}
+.product-quntity-container {
+    display: flex;
+    justify-content: end;
+}
+.product-quntity-container input {
+    width: 50px;
+    outline: none;
+    margin-right: 0.2rem;
+    font-size: 1rem;
+}
+
+.product-quntity-container button {
+    padding: 0.2rem;
+    padding: 0.2rem 1rem;
+    background-color: #121212;
+    color: #ffffff;
+}
+.product-quntity-container button svg {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.check-box {
+    margin-top: 0.8rem;
+}
+
+
+.not-found-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #B00020;
+
+}
+.not-found svg {
+    margin-right: 1rem;
+}
+
+@media  only screen and (max-width: 1005px) {
+    .product-container {
+        width: 98%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .product-container {
+        overflow-x: scroll;
+    }
+}

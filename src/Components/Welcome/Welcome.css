@@ -1,0 +1,48 @@
+.welcome-wrapper {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    
+}
+.top {
+    transform: translateY(-50rem);
+    animation: clear 1s forwards;
+    font-weight: 500;
+    text-align: center;
+}
+.middle {
+    transform: translateX(-100rem);
+    animation: clear 1s 1s forwards;
+    font-weight: 400;
+}
+.bottom {
+    transform: translateX(100rem);
+    animation: clear 1s 2s forwards;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+#home-btn {
+    display: block;
+    text-align: center;
+    background-color: #2196F3;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size:1rem;
+    color: #fff;
+    transform: translateY(50rem);
+    animation: clear 1s 3s forwards;
+}
+#home-btn:hover {
+    opacity: 0.8;
+}
+@keyframes clear {
+    to {
+        transform: none;
+    }
+}
