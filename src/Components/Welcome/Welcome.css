@@ -28,15 +28,19 @@
 #home-btn {
     display: block;
     text-align: center;
-    background-color: #2196F3;
+    background-color: #0D47A1;
     text-decoration: none;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     font-size:1rem;
     color: #fff;
+    text-transform: uppercase;
+    font-size: 0.9;
+    opacity: 1;
     transform: translateY(50rem);
     animation: clear 1s 3s forwards;
+    transition: opacity 0.5s ease-in-out;
 }
 #home-btn:hover {
     opacity: 0.8;

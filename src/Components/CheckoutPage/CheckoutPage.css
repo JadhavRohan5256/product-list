@@ -61,7 +61,10 @@
     width: 100px;
     margin-left: 1rem;
 }
-
+.product-total {
+    font-weight: 500;
+    color: #0D47A1;
+}
 
 /* right container    css */
 .right-container {
@@ -109,7 +112,7 @@
     display: block;
     width: 100%;
     justify-content: space-around;
-    padding: 1rem;
+    padding: 0.7rem 1rem;
     color: #fff;
     border-radius: 50px;
     background-color: #0D47A1;
@@ -118,8 +121,13 @@
     cursor: pointer;
     text-decoration: none;
     text-align: center;
+    font-size: 0.9rem;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
-
+.proceed-btn:hover {
+    opacity: 0.7;
+}
 .proceed-btn.disabled {
     pointer-events: none;
     opacity: 0.7;

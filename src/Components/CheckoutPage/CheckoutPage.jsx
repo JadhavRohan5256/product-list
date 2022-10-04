@@ -17,7 +17,7 @@ export default class CheckoutPage extends Component {
     return (
       <div className="checkout-wrapper">
         <LeftSide products={this.props.products} addToCart={this.props.addToCart} />
-        <RightSide products={this.props.products} removeCart={this.props.removeCarts} />
+        <RightSide products={this.props.products} removeCart={this.props.removeCart} />
       </div>
     )
   }
@@ -87,7 +87,7 @@ let TableData = (props) => {
           <AddIcon className='increaseIcon' onClick={increaseQuntity}/>
         </section>
       </td>
-      <td>&#36; {props.product.quntity * props.product.price}</td>
+      <td className="product-total">&#36;{props.product.quntity * props.product.price}</td>
     </tr>
   )
 }
@@ -106,7 +106,7 @@ export let RightSide = (props) => {
   if (total <= 0) disabled = 'disabled';
 
   let removeHandler = () => {
-    props.removeCarts();
+    props.removeCart();
   }
   return (
     <section className="right-container">

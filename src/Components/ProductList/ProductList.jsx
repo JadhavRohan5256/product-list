@@ -21,11 +21,6 @@ export default function ProductList(props) {
                 <FilterResult products={props.products} category={category} addToCart={props.addToCart}  />
             )
         }
-        // else if (category === 'all') {
-        //     return (
-        //         <FilterResult products={props.products} category={category} addToCart={props.addToCart}  />
-        //     )
-        // }
     }
     return (
         <>
@@ -187,15 +182,3 @@ let TableData = (props) => {
 
     );
 }
-
-// export let Quntity = (props) => {
-//     let updateQuntity = (e) => {
-//         if (e.target.value >= 1) {
-//             props.product.quntity = parseInt(e.target.value);
-//         }
-//         props.addToCart(props.product, false, true, props.reload);
-//     }
-//     return (
-//         <input type="number" defaultValue={props.product.quntity} name={'quntity_' + props.product.id} className='quntity' onChange={updateQuntity} min={0} max={100} />
-//     );
-// }
